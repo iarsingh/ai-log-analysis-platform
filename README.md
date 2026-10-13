@@ -1,5 +1,12 @@
 # AI Log Analysis Platform
 
+## Overview
+
+A small AI and SRE lab that labels log lines by failure type. `POST /classify` uses a log lexicon to tag each line as `oom`, `timeout` or `auth`. A versioned ops API under `/v1` adds workspaces, tenant isolation, job approval and audit records, and the service is packaged with Docker and Docker Compose with pytest tests run in GitHub Actions.
+
+- **Built with:** Python, pytest, Docker, GitHub Actions
+- **Scope:** Local laptop lab with lexicon-based labels; it calls no hosted model and does not apply production changes.
+
 <!-- project-guide:start -->
 ## Project guide
 
